@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      IMAGE: gchr.io/${{ github.repository }}
+      IMAGE: gchr.io/${{ github.repository }}:latest
 
     steps:
       - uses: actions/checkout@v2
