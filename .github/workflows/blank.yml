@@ -10,10 +10,8 @@ jobs:
       IMAGE: gchr.io/${{ github.repository }}
 
     steps:
-      - run: echo "FROM alpine" > Dockerfile
+      - uses: actions/checkout@v2
 
-      - run: ls
-      
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
         with:
